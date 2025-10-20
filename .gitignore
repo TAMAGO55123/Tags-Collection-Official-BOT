@@ -1,0 +1,10 @@
+.DS_Store
+.env
+__pycache__
+.venv
+req_py.sh
+*.db
+main.py
+search.py
+test.py
+user.py

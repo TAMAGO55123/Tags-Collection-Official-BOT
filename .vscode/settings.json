@@ -1,0 +1,37 @@
+{
+    "python.analysis.autoImportCompletions": false,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "sv5.php.starfree.ne.jp",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "tamago55_bots",
+            "username": "tamago55_admin",
+            "name": "starfree"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "mysql1.php.starfree.ne.jp",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "starfree2",
+            "database": "tamago55_bots",
+            "username": "tamago55_admin@sv5.php.starfree.ne.jp"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "oldtag",
+            "database": "/Users/tamago/Desktop/github/tag.db"
+        }
+    ]
+}
