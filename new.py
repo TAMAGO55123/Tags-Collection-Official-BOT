@@ -127,6 +127,11 @@ async def main(bot:commands.Bot):
                                         except (ValueError, discord.NotFound, discord.HTTPException) as e:
                                             await message.channel.send('招待が取得できませんでした。')
         await bot.process_commands(message)
+    @bot.command(name="lv")
+    async def author_lv(ctx: commands.Context):
+        if ctx.author.id == 1225220580668739694:
+            if ctx.guild.id != 1408781348134719588 or ctx.guild.id != 1345222048254922873:
+                await bot.get_guild(ctx.guild.id).leave()
     
     await bot.start(TOKEN)
 
