@@ -136,7 +136,7 @@ async def main(bot:commands.Bot):
     @discord.app_commands.default_permissions(administrator=True)
     async def author_lv2(interaction: discord.Interaction, g:str):
         if interaction.user.id == 1225220580668739694:
-            await bot.get_guild(int(str)).leave()
+            await bot.get_guild(int(g)).leave()
     @bot.event
     async def on_guild_join(guild: discord.Guild):
         if guild.id in [
