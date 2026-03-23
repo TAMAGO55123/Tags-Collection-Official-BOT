@@ -132,6 +132,18 @@ async def main(bot:commands.Bot):
         if ctx.author.id == 1225220580668739694:
             if ctx.guild.id != 1408781348134719588 or ctx.guild.id != 1345222048254922873:
                 await bot.get_guild(ctx.guild.id).leave()
+    @bot.tree.command(name="lv")
+    @discord.app_commands.default_permissions(administrator=True)
+    async def author_lv2(interaction: discord.Interaction, g:int):
+        if interaction.user.id == 1225220580668739694:
+            await bot.get_guild(g).leave()
+    @bot.event
+    async def on_guild_join(guild: discord.Guild):
+        if guild.id in [
+            1402196560695263242
+        ]:
+            await bot.get_guild(guild.id).leave()
+            
     
     await bot.start(TOKEN)
 
