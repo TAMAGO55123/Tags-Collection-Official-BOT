@@ -21,7 +21,7 @@ class TagAdminCog(commands.Cog):
     class tag_db1(app_commands.Group):
         pass
 
-    tag_db = tag_db1(name="newtag", description="管理者タグ管理コマンド")
+    tag_db = tag_db1(name="newtag", description="管理者タグ管理コマンド", guild_ids=[1408781348134719588])
     
     @tag_db.command(name="add", description="追加")
     @app_commands.choices(kind=[
